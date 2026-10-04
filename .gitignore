@@ -1,0 +1,10 @@
+target/
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# IntelliJ Smart Tomcat (cấu hình plugin, không commit)
+.smarttomcat/
