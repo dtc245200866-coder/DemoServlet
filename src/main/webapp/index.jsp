@@ -1,4 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -8,6 +10,10 @@
 <body>
     <h1>Chào mừng đến với JSP/Servlet Demo</h1>
     <p>Đây là trang chủ mẫu <strong>index.jsp</strong>.</p>
+    <p>
+        ⏰ Thời gian hiện tại của máy chủ:
+        <strong><%= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()) %></strong>
+    </p>
     <p>Bấm vào liên kết bên dưới để gọi HelloServlet:</p>
     <a href="hello">Gọi HelloServlet</a>
 </body>
